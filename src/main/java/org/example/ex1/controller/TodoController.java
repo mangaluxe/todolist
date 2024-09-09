@@ -44,7 +44,7 @@ public class TodoController {
     @RequestMapping("/un") // URL: http://localhost:8080/un
     public String getOneTodo(Model model) {
 //        System.out.println(todoService.message());
-        model.addAttribute("todo", todolist.get(1));
+        model.addAttribute("todo", todolist.get(0));
         model.addAttribute("todolist", todolist);
         return "un";
     }

@@ -8,8 +8,11 @@
 
     <h1>Détail d'une chose à faire</h1>
 
-    <p>Bonjour <span th:text="${todo}"></span> !</p>
+<!--    <p>Bonjour <span th:text="${todo}"></span> !</p>-->
 
+    <p>Title: <span th:text="${todo.name}"></span></p>
+    <p>Description: <span th:text="${todo.description}"></span></p>
+    <p>Status: <span th:text="${todo.status}"></span></p>
 
 </body>
 </html>
