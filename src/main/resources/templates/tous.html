@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+<body>
+
+    <h1>Todo List</h1>
+
+    <p th:if="${todolist.isEmpty()}">La liste est vide</p>
+
+    <ul th:unless="${todolist.isEmpty()}" >
+        <li th:each="t : ${todolist}">
+            <span th:text="${t}"></span>
+        </li>
+    </ul>
+
+</body>
+</html>
